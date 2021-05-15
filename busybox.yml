@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   containers:
-    - image: http://registry.cn-hongkong.aliyuncs.com/flatychen/busyboxs
+    - image: registry.cn-hongkong.aliyuncs.com/flatychen/busyboxs
       command:
         - sleep
         - "3600"
