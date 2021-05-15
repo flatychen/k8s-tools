@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busyboxs
+  namespace: default
+spec:
+  containers:
+    - image: http://registry.cn-hongkong.aliyuncs.com/flatychen/busyboxs
+      command:
+        - sleep
+        - "3600"
+      imagePullPolicy: IfNotPresent
+      name: busyboxs
+  restartPolicy: Always
